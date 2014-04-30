@@ -69,14 +69,14 @@ You can also ask Karma to do a single run of the tests and then exit.
     └── including fallbacks for legacy browsers and all vendor using compass mixins
 
 # Tools I have used:
-- AngularJS
+# AngularJS
     ├── filters
     ├── services
     ├── directives
     ├── controllers
     └── angularRoute
 
-- node.js
+# node.js
     ├── grunt
     ├── compass
     ├── jshint
@@ -85,7 +85,7 @@ You can also ask Karma to do a single run of the tests and then exit.
     ├── watch
     └── ngmin
 
-- Grunt.js
+# Grunt.js
     ├── grunt.loadNpmTasks('grunt-contrib-watch');
     ├── grunt.loadNpmTasks('grunt-contrib-requirejs');
     ├── grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -108,7 +108,7 @@ You can also ask Karma to do a single run of the tests and then exit.
             └──  Uglifying
 
 
-- Bower.js
+# Bower.js
     angular-base#0.1 /Users/Leo/Documents/root/angular-base
     ├── angular#1.2.16 (latest is 1.3.0-build.2654+sha.60b2851)
     ├─┬ angular-mocks#1.2.16 extraneous (1.2.17-build.149+sha.21428e5 available, latest is 1.3.0-build.2654+sha.60b2851)
@@ -130,17 +130,17 @@ You can also ask Karma to do a single run of the tests and then exit.
     └── sinon#1.9.1 extraneous
 
 # Automatic Test
-    ├──Jasmine (Automatic test framework)
+    ├──Jasmine (Automatic test framework: or http://searls.github.io/jasmine-all/jasmine-all-min.js)
     └──karma (Test Driver)
         ├──safari pluggin karma-safari-launcher
         └──ios pluggin karma-ios-launcher
 
-An alternative:
-- http://searls.github.io/jasmine-all/jasmine-all-min.js
 
 # Lay-out test:
+<pre>
 cd tests/casper
 casperjs go.js http://www.bostonglobe.com/
+</pre>
 
 # Parts of the tests:
     ├── lib _ jasmine Framework
