@@ -1,0 +1,58 @@
+<!doctype html>
+<!--[if lt IE 7]>  <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 no-svg" lang="en"><![endif]-->
+<!--[if IE 7]>     <html class="no-js lt-ie10 lt-ie9 lt-ie8 no-svg" lang="en"><![endif]-->
+<!--[if IE 8]>     <html class="no-js lt-ie10 lt-ie9 no-svg" lang="en"><![endif]-->
+<!--[if IE 9]>     <html class="no-js lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html ng-app="myTestApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Leo Lanese" />
+
+    <title ng-controller="titleCtrl">{{t0}}</title>
+
+    <link rel="stylesheet" href="app/css/main.css"/>
+    <!--
+    01101100 01100101 01101111 01101100 01100001 01101110 01100101 01110011 01100101 00001010
+    -->
+</head>
+
+	<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <noscript>Sorry, your browser does not support JavaScript. Please, update you browser engine.</noscript>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#/view1">View (1)</a></li>
+            <li><a href="#/view2">View (2)</a></li>
+            <li><a href="#/view3">View (3)</a></li>
+        </ul>
+    </nav>
+
+    <input ng-model="value"><br>{{value}}
+
+
+    <!-- markup -->
+    <div id="wrapper">
+
+        <div class="gs">
+            <div ng-view></div>
+        </div>
+
+    </div>
+
+    <footer class="author-block typography">
+        footer
+    </footer>
+
+    <!-- RequireJS to automatically load routes.js (data-main)  -->
+    <script data-main="app/js/main" src="./bower_components/requirejs/require.js"></script>
+
+	</body>
+</html>
