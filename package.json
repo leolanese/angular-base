@@ -39,6 +39,8 @@
     "requirejs": "^2.1.11",
     "grunt-karma": "^0.8.3",
     "grunt-modernizr": "^0.5.2",
-    "grunt-contrib-jasmine": "^0.5.3"
+    "grunt-contrib-jasmine": "^0.5.3",
+    "grunt-template-jasmine-requirejs": "^0.1.10",
+    "grunt-ngmin": "0.0.3"
   }
 }

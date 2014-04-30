@@ -18,7 +18,7 @@ us manage and test the application.
 * We get the tools we depend upon via `npm`, the [node package manager][npm].
 * We get the angular code via `bower`, a [client-side code package manager][bower].
 
-We have pre-configured `npm` to automatically run `bower` so we can simply do:
+We have pre-configured `npm` to automatically run `bower` so we can simply do (package.json):
 
 ```
 npm install
@@ -28,12 +28,6 @@ You should find that you have a new folders in your project.
 
 * `node_modules` - contains the npm packages for the tools we neednpm run test-single-run
 
-
-Also we need to install:
-```
-npm install grunt-ngmin
-npm install grunt-template-jasmine-requirejs
-```
 
 # Run the Application
 I have pre-configured the project with a simple development web server.
