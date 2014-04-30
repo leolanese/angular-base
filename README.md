@@ -136,17 +136,19 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 
 # Bower.js
-    angular-base#0.1 /Users/Leo/Documents/root/angular-base
-    ├── angular#1.2.16 (latest is 1.3.0-build.2654+sha.60b2851)
-    ├─┬ angular-mocks#1.2.16 extraneous (1.2.17-build.149+sha.21428e5 available, latest is 1.3.0-build.2654+sha.60b2851)
-    │ └── angular#1.2.16 (latest is 1.3.0-build.2654+sha.60b2851)
-    ├─┬ angular-route#1.2.16 extraneous (1.2.17-build.149+sha.21428e5 available, latest is 1.3.0-build.2654+sha.60b2851)
+    angular-base#0.1
+    ├── angular#1.2.16
+    ├─┬ angular-mocks#1.2.16 extraneous
     │ └── angular#1.2.16
-    ├─┬ angular-scenario#1.2.16 extraneous (1.2.17-build.149+sha.21428e5 available, latest is 1.3.0-build.2654+sha.60b2851)
+    ├─┬ angular-route#1.2.16 extraneous
+    │ └── angular#1.2.16
+    ├─┬ angular-scenario#1.2.16 extraneous
     │ └── angular#1.2.16
     ├── happen#0.1.3 extraneous
     ├── jasmine#1.3.1 extraneous (latest is 2.0.0)
-    ├── jasmine-jquery#2.0.3 extraneous
+    ├─┬ jasmine-sinon#0.3.1
+    │ ├── jasmine#1.3.1 (latest is 2.0.0)
+    │ └── sinonjs#1.7.3 (latest is 1.9.1)
     ├── jquery#1.10.2 (latest is 2.1.1-rc2)
     ├── modernizr#2.6.3 (latest is 2.8.0)
     ├── namespace#0.5.3 extraneous

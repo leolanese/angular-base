@@ -1,4 +1,4 @@
-﻿var blowserClient = function () {
+﻿var browserClient = function () {
     //rendering engines
     var engine = {
         ie: 0,

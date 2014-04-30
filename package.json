@@ -41,6 +41,7 @@
     "grunt-modernizr": "^0.5.2",
     "grunt-contrib-jasmine": "^0.5.3",
     "grunt-template-jasmine-requirejs": "^0.1.10",
-    "grunt-ngmin": "0.0.3"
+    "grunt-ngmin": "0.0.3",
+    "jasmine-sinon": "^0.3.1"
   }
 }
