@@ -6,10 +6,10 @@ To get you started you can simply clone the angular-seed repository and install 
 # Clone angular-base
 Clone the angular-base repository using:
 
-'''
+```
 git clone origin https://github.com/sirwilliam/angular-base.git
 cd angular-base
-'''
+```
 
 # Install Dependencies
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
@@ -93,7 +93,6 @@ You can also ask Karma to do a single run of the tests and then exit.
     ├── grunt.loadNpmTasks('grunt-contrib-compass');
     ├── grunt.loadNpmTasks('grunt-contrib-csslint');
     ├── grunt.loadNpmTasks('grunt-contrib-jasmine');
-
     ├── grunt.loadNpmTasks('grunt-karma');
     ├── grunt.loadNpmTasks('grunt-ngmin');
     └── grunt.loadNpmTasks("grunt-modernizr");
