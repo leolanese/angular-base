@@ -24,9 +24,23 @@ We have pre-configured `npm` to automatically run `bower` so we can simply do (p
 npm install
 ```
 
+# Verify install
+```
+node -v;
+npm -v;
+git --version;
+node --version;
+bower -v;
+karma --version;
+grunt -version;
+sass -v;
+phantomjs --version;
+casperjs --version;
+```
+
 You should find that you have a new folders in your project.
 
-* `node_modules` - contains the npm packages for the tools we neednpm run test-single-run
+* `node_modules` - contains the npm packages for the tools we need npm run test-single-run
 
 
 # Run the Application
