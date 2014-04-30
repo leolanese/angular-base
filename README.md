@@ -138,8 +138,8 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 # Lay-out test:
 <pre>
-cd tests/casper
-casperjs go.js http://www.bostonglobe.com/
+    cd tests/casper
+    casperjs go.js http://www.bostonglobe.com/
 </pre>
 
 # Parts of the tests:
@@ -156,18 +156,20 @@ casperjs go.js http://www.bostonglobe.com/
 
 
 # Problems on push:
-git rm --cache -r -f .sass-cache/
-git rm --cache -r -f .idea/
-
+<pre>
+    git rm --cache -r -f .sass-cache/
+    git rm --cache -r -f .idea/
+</pre>
 
 # Thanks:
+<pre>
 Inspired by the angular-seed project:
 https://github.com/angular/angular-seed
-
+</pre>
 
 <br>
 -----
-Leo Lanese, I build websites, London, UK<br>
+#Leo Lanese, I build websites, London, UK<br>
 
 # My Portfolio<br>
     └──<a href="http://www.leolanese.com">http://www.leolanese.com</a><br>
