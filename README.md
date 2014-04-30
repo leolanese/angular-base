@@ -53,7 +53,7 @@ grunt karma
 You can also ask Karma to do a single run of the tests and then exit.
 - npm run test-single-run
 
-----
+
 
 # Skills  I have used (the usual suspects):
     ├── javascript
@@ -168,7 +168,7 @@ https://github.com/angular/angular-seed
 
 <br>
 -----
-#Leo Lanese, I build websites, London, UK<br>
+## Leo Lanese, I build websites, London, UK<br>
 
 # My Portfolio<br>
     └──<a href="http://www.leolanese.com">http://www.leolanese.com</a><br>
