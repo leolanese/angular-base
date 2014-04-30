@@ -36,6 +36,7 @@ grunt -version;
 sass -v;
 phantomjs --version;
 casperjs --version;
+bower version;
 ```
 
 You should find that you have a new folders in your project.
