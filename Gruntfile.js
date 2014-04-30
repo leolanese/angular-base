@@ -9,9 +9,10 @@ module.exports = function(grunt) {
             basePath: '../',
             srcPath: '../src/',
             deployPath: '../deploy/',
-            jasmine: 'tests/jasmine/',
             root: '/Users/Leo/Documents/root/angular-base',
-            www: '/Users/Leo/Documents/root/angular-base/www'
+            www: '/Users/Leo/Documents/root/angular-base/www',
+            jasmine: '<%= meta.root  %>/tests/'
+
 
         },
 
@@ -104,6 +105,7 @@ module.exports = function(grunt) {
             }
         },
 
+
         jshint: {
             options: {
                 // Specifying JSHint options and globals
@@ -113,15 +115,42 @@ module.exports = function(grunt) {
         },
 
 
-        jasmine: {
-            pivotal: {
-                src: '<%= jasmine =>/src/**/*.js',
-                options: {
-                    specs: '<%= jasmine =>/spec/*Spec.js',
-                    helpers: '<%= jasmine =>/spec/*Helper.js'
-                }
+
+connect: {
+    test : {
+        port : 8888
+    }
+},
+jasmine: {
+
+    simple: {
+        src: '<%= meta.jasmine %>/src/**/*.js',
+        options: {
+            specs: '<%= meta.jasmine  %>spec/**/*Spec.js',
+            helpers: '<%= meta.jasmine  %>lib/helpers/*.js'
+        }
+    },
+
+    templateTest: {
+        // project's source files
+        src: '<%= meta.jasmine %>/src/**/*.js',
+            options: {
+            // Jasmine spec files
+            specs: '<%= meta.jasmine  %>spec/*Spec.js',
+                // spec helper files
+                helpers: '<%= jasmine  %>lib/helpers/*.js',
+                host: 'http://192.168.0.5:8888/',
+                template: require('grunt-template-jasmine-requirejs'),
+                templateOptions: {
+                    requireConfigFile: '<%= meta.root %>/app/js/main.js',
+                    requireConfig: {
+                        baseUrl: 'overridden/baseUrl'
+                    }
             }
-        },
+        }
+    }
+},
+
 
         // The responsive_images task will take your source image and
         // create images at different resolutions for use
@@ -189,6 +218,66 @@ module.exports = function(grunt) {
             }
         },
 
+
+        //  grunt-modernizr automatically find references to Modernizr detects in your code
+        modernizr: {
+
+            dist: {
+                // [REQUIRED] Path to the build you're using for development.
+                "devFile" : "<%= meta.root  %>/bower_components/modernizr/modernizr.js",
+
+                // [REQUIRED] Path to save out the built file.
+                "outputFile" : "<%= meta.root  %>/bower_components/modernizr/modernizr-custom.js",
+
+                // Based on default settings on http://modernizr.com/download/
+                "extra" : {
+                    "shiv" : true,
+                    "printshiv" : false,
+                    "load" : true,
+                    "mq" : true,
+                    "cssclasses" : true,
+                    "fontface" : true
+                },
+
+                // Based on default settings on http://modernizr.com/download/
+                "extensibility" : {
+                    "addtest" : false,
+                    "prefixed" : false,
+                    "teststyles" : false,
+                    "testprops" : false,
+                    "testallprops" : false,
+                    "hasevents" : false,
+                    "prefixes" : false,
+                    "domprefixes" : false
+
+                },
+
+                // By default, source is uglified before saving
+                "uglify" : true,
+
+                // Define any tests you want to implicitly include.
+                "tests" : [],
+
+                // By default, this task will crawl your project for references to Modernizr tests.
+                // Set to false to disable.
+                "parseFiles" : true,
+
+                // When parseFiles = true, this task will crawl all *.js, *.css, *.scss files, except files that are in node_modules/.
+                // You can override this by defining a "files" array below.
+                // "files" : {
+                // "src": []
+                // },
+
+                // When parseFiles = true, matchCommunityTests = true will attempt to
+                // match user-contributed tests.
+                "matchCommunityTests" : false,
+
+                // Have custom Modernizr tests? Add paths to their location here.
+                "customTests" : []
+            }
+
+        },
+
         // watching tasks
         watch: {
             options: {
@@ -228,7 +317,7 @@ module.exports = function(grunt) {
 
     });
 
-    // Load required modules
+    // // Register tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -236,9 +325,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
+
     grunt.loadNpmTasks('grunt-ngmin'); // add the [] for production uglify
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks("grunt-modernizr");
+
 
     // Task definitions
-    grunt.registerTask('default', ['watch', 'karma', 'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
+    grunt.registerTask('default', 'jasmine', ['watch', 'karma', 'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
 };

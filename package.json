@@ -22,7 +22,6 @@
     "karma-firefox-launcher": "~0.1.0",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-jasmine": "^0.1.5",
-
     "karma-requirejs": "^0.2.1",
     "karma-coffee-preprocessor": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
@@ -38,6 +37,8 @@
     "grunt-contrib-uglify": "^0.4.0",
     "karma-safari-launcher": "^0.1.1",
     "requirejs": "^2.1.11",
-    "grunt-karma": "^0.8.3"
+    "grunt-karma": "^0.8.3",
+    "grunt-modernizr": "^0.5.2",
+    "grunt-contrib-jasmine": "^0.5.3"
   }
 }

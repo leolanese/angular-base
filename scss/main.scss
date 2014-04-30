@@ -1,6 +1,16 @@
 @import "_rwd_reset";
 @import "_base";
 
+/*
+  no javascript
+*/
+.flex { background: green; }
+.no-js .flex { background: red }
+
+
+/*
+  mobile first
+*/
 #wrapper {
   max-width: 620px;
   margin: 0 auto;
@@ -8,37 +18,85 @@
   background-color: $c1;
 }
 
+
 /* custom grid */
-.g {
+.gs {
   display: inline-block;
   vertical-align: top;
-  width:23%;
   margin-left: 2%;
   margin-bottom: 20px;
   font-size: 16px; /* older browser */
   font-size: 1rem;
 }
 
+
+/*
+  fluid design
+*/
 .flex {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 20px;
   font-size: 16px; /* legacy browser */
   font-size: 1rem;
+  border-radius: 10px;
 }
-
 .flex-1 { width: 23%; }
 .flex-2 { width: 48%; }
 .flex-3 { width: 73%; }
 .flex-4 { width: 98%; }
 
-.flex {
-  border-radius: 10px;
-  background-color: $c3;
+/*
+  footer
+*/
+
+.footer {
+  background: greenyellow;
 }
+
+/*
+  menu
+*/
+.menu li {
+  display: inline-table;
+}
+
+/*
+ nav
+*/
+.nav {
+  background: red;
+}
+
 
 .box {
   padding: 10px;
+}
+
+
+/*
+  Responsive breaking points and Mobile First approach
+*/
+body {
+  background: #e4b477;
+}
+
+@media all and (min-width: 480px) {
+  body {
+    background: green;
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    background: red;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    background: blue;
+  }
 }
 
 

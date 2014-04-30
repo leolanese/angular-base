@@ -1,5 +1,5 @@
 /* Vendor Dependencies */
-@import "compass";
+//. @import "compass";
 
 $c1:  #fff;
 $c2: #f1f1f1;
@@ -9,7 +9,7 @@ $c5: #222;
 $c6: #000;
 
 $base-color: $c4;
-$base-font-family: 'Droid Sans', 'Droid Serif', 'helvetica', sans-serif;
+$base-font-family: 'Roboto', 'helvetica', sans-serif;
 $base-font-size: 1em;
 $base-font-weight: 300;
 
@@ -19,13 +19,11 @@ body {
   font-size: $base-font-size;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  padding: 30px;
   line-height: 1.6;
   width: 100%;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $base-font-family;
   font-weight: $base-font-weight;
   padding: 15px;
 }

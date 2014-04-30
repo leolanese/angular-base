@@ -103,22 +103,21 @@ body {
   -ms-text-size-adjust: 100%;
   color: #37302a;
   background: #fff;
-  font: normal 100% / 1rem Arial;
 }
 
 /* Mobile tap highlighting */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003111}}
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003117}}
 img {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003121}}
 button, input, select, textarea {
   font-family: inherit;
   /* 1 */
@@ -128,12 +127,12 @@ button, input, select, textarea {
   /* 3 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003130}}
 a:focus {
   outline: thin dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003134}}
 button, html input[type="button"] {
   -webkit-appearance: button;
   /* 2 */
@@ -141,19 +140,19 @@ button, html input[type="button"] {
   /* 3 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003142}}
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
   /* 3 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003149}}
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003155}}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -164,61 +163,75 @@ audio:not([controls]) {
 body {
   color: #333333;
   font-size: 1em;
-  font-family: "Droid Sans", "Droid Serif", "helvetica", sans-serif;
+  font-family: "Roboto", "helvetica", sans-serif;
   font-weight: 300;
-  padding: 30px;
   line-height: 1.6;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000326}}
 .h1, .typography h1, .h2, .typography h2, .h3, .typography h3, .h4, .typography h4, .h5, .typography h5, .h6, .typography h6 {
-  font-family: "Droid Sans", "Droid Serif", "helvetica", sans-serif;
   font-weight: 300;
   padding: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000332}}
 .typography h1 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000333}}
 .typography h2 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000334}}
 .typography h3 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000335}}
 .typography h4 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000336}}
 .typography h5 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000337}}
 .typography h6 {
   margin: 1em 0 .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000341}}
 .link {
   color: white;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000345}}
 .link:visited {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000349}}
 .link:hover, .link:visited:hover {
   color: white;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\000034}}
+/*
+  no javascript
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\000037}}
+.flex {
+  background: green;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\000038}}
+.no-js .flex {
+  background: red;
+}
+
+/*
+  mobile first
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000314}}
 #wrapper {
   max-width: 620px;
   margin: 0 auto;
@@ -227,11 +240,10 @@ body {
 }
 
 /* custom grid */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000312}}
-.g {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000323}}
+.gs {
   display: inline-block;
   vertical-align: top;
-  width: 23%;
   margin-left: 2%;
   margin-bottom: 20px;
   font-size: 16px;
@@ -239,7 +251,10 @@ body {
   font-size: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000322}}
+/*
+  fluid design
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000336}}
 .flex {
   display: inline-block;
   vertical-align: top;
@@ -247,35 +262,81 @@ body {
   font-size: 16px;
   /* legacy browser */
   font-size: 1rem;
+  border-radius: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000344}}
 .flex-1 {
   width: 23%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000345}}
 .flex-2 {
   width: 48%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000346}}
 .flex-3 {
   width: 73%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000347}}
 .flex-4 {
   width: 98%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000335}}
-.flex {
-  border-radius: 10px;
-  background-color: #bbbbbb;
+/*
+  footer
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000353}}
+.footer {
+  background: greenyellow;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000340}}
+/*
+  menu
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000360}}
+.menu li {
+  display: inline-table;
+}
+
+/*
+ nav
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000367}}
+.nav {
+  background: red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000372}}
 .box {
   padding: 10px;
+}
+
+/*
+  Responsive breaking points and Mobile First approach
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000380}}
+body {
+  background: #e4b477;
+}
+
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000385}}
+  body {
+    background: green;
+  }
+}
+@media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000391}}
+  body {
+    background: red;
+  }
+}
+@media all and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000397}}
+  body {
+    background: blue;
+  }
 }

@@ -3,41 +3,37 @@
 <html>
 <head>
     <title>Jasmine WMS Spec Runner</title>
-    <script type="text/javascript" src="../../js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/jquery.js"></script>
 
     <!-- jasmine stuff -->
-    <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
-    <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
-    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
-    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/lib/jasmine-core/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css">
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
 
     <!-- jasmine helpers -->
-    <script type="text/javascript" src="lib/helpers/sinon.js"></script>
-    <script type="text/javascript" src="lib/helpers/happen.js"></script>
-    <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/sinon/lib/sinon.js"></script>
+    <script type="text/javascript" src="../bower_components/happen/happen.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine-jquery/lib/jasmine-jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/namespace/namespace.js"></script>
+    <!-- Additional Jasmine grammar to enable alternate BDD approaches. -->
     <script type="text/javascript" src="lib/helpers/jasmineGrammar.js"></script>
-    <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
     <script type="text/javascript" src="lib/helpers/mock-ajax.js"></script>
-    <script type="text/javascript" src="lib/helpers/namespace.js"></script>
-    <script type="text/javascript" src="lib/helpers/specHelper.js"></script>
 
     <!-- user agent sniffing -->
     <script type="text/javascript" src="lib/ua.js"></script>
 
-    <!-- source spec files here -->
+    <!-- source spec files here: never point at real production -->
     <script type="text/javascript" src="spec/wmsRunnerSpec.js"></script>
-    <script type="text/javascript" src="src/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="\Css/nav.css">
+
+    <link rel="stylesheet" type="text/css" href="/\Css/nav.css">
     <link rel="stylesheet" type="text/css" href="\Css/home.css">
     <link rel="stylesheet" type="text/css" href="\Css/accordion.css">
 
     <!-- source src files to be tested -->
     <script type="text/javascript" src="../../js/core.js"></script>
-    <script type="text/javascript" src="../../js/lib/idangerous.swiper-2.0.js"></script>
-    <script type="text/javascript" src="../../js/widthdetector.js"></script>
-    <script type="text/javascript" src="../../js/lib/yepnope.1.5.4-min.js"></script>
-    <script type="text/javascript" src="../../js/fetch_grid.js"></script>
 
+    <!-- Jasmine loader -->
     <script type="text/javascript">
         (function() {
             var jasmineEnv = jasmine.getEnv();
@@ -71,4 +67,5 @@
 
 <body>
 </body>
+
 </html>

@@ -31,6 +31,7 @@ module.exports = function(config) {
 
         'tests/**/*Spec.js',
         'app/js/**/*.js'
+
     ],
 
 

@@ -18,11 +18,21 @@ define(['angular', 'services'], function (angular) {
             $scope.nameFilter = null;
             $scope.startList = [];
 
-            // multiple @fonts loader
-            WebFont.load({
-                google: {
-                    families: ['Droid Sans', 'Droid Serif']
-                }
+            $scope.fontloader = function(){
+
+                // multiple @fonts loader
+                WebFont.load({
+                    google: {
+                        families: ['Roboto']
+                    }
+                });
+
+            };
+
+            Modernizr.load({
+                test: Modernizr.fontface,
+                yep : $scope.fontloader(),
+                nope: '/path-to/old-css-attributes.css' // If NOT, load this instead
             });
 
             labAPIservice.getJSON($scope.id).success(function (response) {
