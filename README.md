@@ -163,7 +163,7 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 # Thanks:
 <pre>
-Inspired by the angular-seed project:
+Inspired by the angular-seed project (Seed project for angular apps.):
 https://github.com/angular/angular-seed
 </pre>
 
