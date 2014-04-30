@@ -1,6 +1,9 @@
 describe("getTweets", function () {
+    var callback;
 
-    it('spy to be called invoke callback', function(){
+
+    beforeEach(function () {
+        suiteWideFoo = 1;
 
         var xhr = sinon.useFakeXMLHttpRequest();
         var requests = sinon.requests = [];
@@ -12,29 +15,26 @@ describe("getTweets", function () {
         var callback = sinon.spy();
 
         $.ajax('/some/article', { success: callback });
+    });
 
-        // alert(sinon.requests.length);
 
-       // expect(sinon.requests.length).toBe('1');
-
-       //  expect(sinon.requests[0].url, "/some/article");
+    it('spy callback', function(){
 
         expect(callback).toHaveBeenCalled;
 
     })
 
+    it('spy request lenght', function(){
 
-    it("should $.ajax &amp; invoke callback", function (done) {
+       expect(sinon.requests.length).toBe(1);
 
-        var message = 'an example message';
-        var error = 'an example error message';
-        var stub = sinon.stub();
-        var spy1 = sinon.spy();
-        var spy2 = sinon.spy();
+    })
 
-        var callback = sinon.spy();
+    it('spy requests', function(){
 
-        expect(callback).toHaveBeenCalled;
-    });
+       expect(sinon.requests[0].url, "/some/article");
+
+    })
+
 
 });
