@@ -1,4 +1,4 @@
-# Angular-base (inspired by angular-seed)
+## Angular-base (inspired by angular-seed)
 
 # Getting Started
 To get you started you can simply clone the angular-seed repository and install the dependencies:
@@ -160,14 +160,14 @@ You can also ask Karma to do a single run of the tests and then exit.
     git rm --cache -r -f .idea/
 </pre>
 
+
 # Thanks:
 <pre>
 Inspired by the angular-seed project:
 https://github.com/angular/angular-seed
 </pre>
 
-<br>
------
+
 ## Leo Lanese, I build websites, London, UK<br>
 
 # My Portfolio<br>
