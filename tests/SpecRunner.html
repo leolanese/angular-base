@@ -5,32 +5,29 @@
   <title>Jasmine Spec Runner</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
-  <!-- jasmine stuff -->
-  <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
-  <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
-  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
-  <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+    <!-- jasmine stuff -->
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-1.2.0/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="lib/jasmine-1.2.0/jasmine.css">
+    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-1.2.0/jasmine-html.js"></script>
 
-  <!-- jasmine helpers -->
-  <script type="text/javascript" src="lib/helpers/jasmine-jquery.js"></script>
-  <script type="text/javascript" src="lib/helpers/sinon.js"></script>
-  <script type="text/javascript" src="lib/helpers/ajaxResponses.js"></script>
-  <script type="text/javascript" src="lib/helpers/happen.js"></script>
-  <script type="text/javascript" src="lib/helpers/jasmineGrammar.js"></script>
-  <script type="text/javascript" src="lib/helpers/jasmineJquery.js"></script>
-  <script type="text/javascript" src="lib/helpers/mock-ajax.js"></script>
-  <script type="text/javascript" src="lib/helpers/namespace.js"></script>
-  <script type="text/javascript" src="lib/helpers/specHelper.js"></script>
+    <!-- jasmine helpers -->
+    <script type="text/javascript" src="../bower_components/sinon/lib/sinon.js"></script>
+    <script type="text/javascript" src="../bower_components/happen/happen.js"></script>
+    <script type="text/javascript" src="../bower_components/jasmine-jquery/lib/jasmine-jquery.js"></script>
+    <script type="text/javascript" src="../bower_components/namespace/namespace.js"></script>
+    <!-- Additional Jasmine grammar to enable alternate BDD approaches. -->
+    <script type="text/javascript" src="lib/helpers/jasmineGrammar.js"></script>
+    <!-- non-invasive way to mock (or simulate) ajax requests throughout your application -->
+    <script type="text/javascript" src="lib/helpers/jquery.mockjax.js"></script>
+    <!-- Optional jquery plugin for assertion debugging -->
+    <script type="text/javascript" src="lib/helpers/jquery.assert.js"></script>
 
-
-    <!-- source src files to be tested, add your javascript code to be tested here -->
-    <script type="text/javascript" src="src/hellotdd.js"></script>
-
+  <!-- source src files to be tested, add your javascript code to be tested here -->
+  <script type="text/javascript" src="src/hellotdd.js"></script>
 
   <!-- source spec files here, add your spec file here -->
   <script type="text/javascript" src="spec/hellotddspec.js"></script>
-
-
 
   <script type="text/javascript">
       (function () {
