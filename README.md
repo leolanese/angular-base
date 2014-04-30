@@ -84,25 +84,40 @@ You can also ask Karma to do a single run of the tests and then exit.
     └── ngmin
 
 # Grunt.js
-    ├── grunt.loadNpmTasks('grunt-contrib-watch');
-    ├── grunt.loadNpmTasks('grunt-contrib-requirejs');
-    ├── grunt.loadNpmTasks('grunt-contrib-jshint');
-    ├── grunt.loadNpmTasks('grunt-contrib-sass');
-    ├── grunt.loadNpmTasks('grunt-contrib-compass');
-    ├── grunt.loadNpmTasks('grunt-contrib-csslint');
-    ├── grunt.loadNpmTasks('grunt-contrib-jasmine');
-    ├── grunt.loadNpmTasks('grunt-karma');
-    ├── grunt.loadNpmTasks('grunt-ngmin');
-    └── grunt.loadNpmTasks("grunt-modernizr");
-        └──
-            Enabled Extras
-            └──  shiv
-            └──  load
-            └──  mq
-            └──  cssclasses
-            └──  fontface
-            └──  Generating a custom Modernizr build: modernizr-custom.js
-            └──  Uglifying
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "^0.1.5",
+    "karma-requirejs": "^0.2.1",
+    "karma-coffee-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": "^0.12.14",
+    "karma-ng-scenario": "~0.1.0",
+    "grunt": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-requirejs": "^0.4.3",
+    "grunt-contrib-csslint": "^0.2.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "karma-safari-launcher": "^0.1.1",
+    "requirejs": "^2.1.11",
+    "grunt-karma": "^0.8.3",
+    "grunt-contrib-jasmine": "^0.5.3",
+    "grunt-template-jasmine-requirejs": "^0.1.10",
+    "grunt-ngmin": "0.0.3"
+    "grunt-modernizr": "^0.5.2",
+    └──
+        Enabled Extras
+        └──  shiv
+        └──  load
+        └──  mq
+        └──  cssclasses
+        └──  fontface
+        └──  Generating a custom Modernizr build: modernizr-custom.js
+        └──  Uglifying
 
 
 # Bower.js
