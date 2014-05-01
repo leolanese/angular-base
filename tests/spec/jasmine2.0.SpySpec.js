@@ -8,7 +8,7 @@ describe("Asynchronous specs", function() {
     beforeEach(function(done) {
         setTimeout(function() {
             value = 0;
-            done();
+            done(); //  this spec will not complete until its done is called
         }, 1);
     });
 
