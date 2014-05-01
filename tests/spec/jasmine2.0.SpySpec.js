@@ -18,21 +18,26 @@ describe("Asynchronous specs", function() {
         done();
     });
 
+
     describe("long asynchronous specs", function() {
         var originalTimeout;
+
+        // By default jasmine will wait for 5 seconds for an asynchronous spec to finish before causing at timeout failure
         beforeEach(function() {
             originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
-            jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+            jasmine.DEFAULT_TIMEOUT_INTERVAL = 7000;
         });
 
-        it("takes a long time", function(done) {
+        it("takes a long time than DEFAULT_TIMEOUT_INTERVAL = 5000 ", function(done) {
             setTimeout(function() {
                 done();
-            }, 9000);
+            }, 6000);
         });
 
         afterEach(function() {
             jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout;
         });
     });
+
+
 });
