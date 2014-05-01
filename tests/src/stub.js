@@ -1,6 +1,10 @@
 describe("getTweets", function () {
     var callback;
 
+    var the = {
+        path: "old title"
+    };
+
 
     beforeEach(function () {
         suiteWideFoo = 1;
@@ -22,17 +26,19 @@ describe("getTweets", function () {
 
         expect(callback).toHaveBeenCalled;
 
-    })
+    });
+
 
     it('spy request lenght', function(){
 
        expect(sinon.requests.length).toBe(1);
 
-    })
+    });
+
 
     it('spy requests', function(){
 
-       expect(sinon.requests[0].url, "/some/article");
+       expect(sinon.requests[0].url, the.path);
 
     })
 

@@ -159,7 +159,7 @@ You can also ask Karma to do a single run of the tests and then exit.
     └── sinon#1.9.1 extraneous
 
 # Automatic Test
-    ├──Jasmine (Automatic test framework: or http://searls.github.io/jasmine-all/jasmine-all-min.js)
+    ├──Jasmine (Behavior Driven Development testing framework: or http://searls.github.io/jasmine-all/jasmine-all-min.js)
     └──karma (Test Driver)
         ├──safari pluggin karma-safari-launcher
         └──ios pluggin karma-ios-launcher
