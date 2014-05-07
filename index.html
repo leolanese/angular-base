@@ -32,54 +32,54 @@
     -->
 </head>
 
-	<body>
+	<body ng-cloak>
 
-    <nav role=""navigation class="nav">
-        <ul class="menu">
-            <li><a href="#/view1">View (1)</a></li>
-            <li><a href="#/view2">View (2)</a></li>
-            <li><a href="#/view3">View (3)</a></li>
-        </ul>
-    </nav>
+        <nav role=""navigation class="nav">
+            <ul class="menu">
+                <li><a href="#/view1">View (1)</a></li>
+                <li><a href="#/view2">View (2)</a></li>
+                <li><a href="#/view3">View (3)</a></li>
+            </ul>
+        </nav>
 
-    <!-- markup -->
-    <div role="main" id="wrapper">
+        <!-- markup -->
+        <div role="main" id="wrapper">
 
-        <div class="gs typography">
-            <div ng-view></div>
+            <div class="gs typography">
+                <div ng-view></div>
 
-            <noscript>
-                <!-- Progressive enhancement: no-js -->
-                <!-- with no javascript wt
+                <noscript>
+                    <!-- Progressive enhancement: no-js -->
+                    <!-- with no javascript wt
 
-                <!-- grid 33% -->
-                <div class="flex flex-2">
-                    <div class="box">
-                        <h2 >Option 1</h2>
-                        Description
-                        <a href="./app/partials/partial2.html" >test</a>
+                    <!-- grid 33% -->
+                    <div class="flex flex-2">
+                        <div class="box">
+                            <h2 >Option 1</h2>
+                            Description
+                            <a href="./app/partials/partial2.html" >test</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-2">
-                    <div class="box">
-                        <h2>Option 2</h2>
-                        Description
-                        <a href="./app/partials/partial3.html" >test</a>
+                    <div class="flex flex-2">
+                        <div class="box">
+                            <h2>Option 2</h2>
+                            Description
+                            <a href="./app/partials/partial3.html" >test</a>
+                        </div>
                     </div>
-                </div>
 
-            </noscript>
+                </noscript>
+
+            </div>
 
         </div>
 
-    </div>
+        <footer role="contentinfo" class="typography footer">
+            <h1>footer</h1>
+        </footer>
 
-    <footer role="contentinfo" class="typography footer">
-        <div>footer</h1>
-    </footer>
-
-    <!-- RequireJS to automatically load routes.js (data-main)  -->
-    <script data-main="app/js/main" src="./bower_components/requirejs/require.js"></script>
+        <!-- RequireJS to automatically load routes.js (data-main)  -->
+        <script data-main="app/js/main" src="./bower_components/requirejs/require.js"></script>
 
 	</body>
 </html>

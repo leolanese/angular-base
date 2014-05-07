@@ -340,3 +340,11 @@ body {
     background: blue;
   }
 }
+/* ng-cloak */
+/*
+ prevent the Angular html template from being briefly displayed by the browser in its raw (uncompiled)
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\00003107}}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
