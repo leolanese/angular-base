@@ -1,7 +1,6 @@
 /*
 http://meyerweb.com/eric/tools/css/reset/
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\000036}}
 html, body, div, span, applet, object, iframe, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -12,12 +11,10 @@ html, body, div, span, applet, object, iframe, h5, h6, p, blockquote, pre, a, ab
 /*
 HTML5 display-role reset for older browsers
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000317}}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000322}}
 html {
   font-family: sans-serif;
   /* 1 */
@@ -27,18 +24,15 @@ html {
   /* 2 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000331}}
 body {
   line-height: 1;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000336}}
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000340}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -56,7 +50,6 @@ table {
 @-o-viewport {
   width: device-width;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000365}}
 a {
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
@@ -65,7 +58,6 @@ a {
   transition: color .3s ease;
   text-decoration: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000372}}
 a:hover {
   text-decoration: none !important;
 }
@@ -73,11 +65,9 @@ a:hover {
 /*  clearfix
 http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000381}}
 .clearfix {
   zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000382}}
 .clearfix:before {
   content: '\0020';
   display: block;
@@ -86,7 +76,6 @@ http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystif
   width: 0;
   height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\0000390}}
 .clearfix:after {
   content: '\0020';
   display: block;
@@ -97,7 +86,6 @@ http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystif
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003102}}
 body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -106,18 +94,15 @@ body {
 }
 
 /* Mobile tap highlighting */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003111}}
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003117}}
 img {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003121}}
 button, input, select, textarea {
   font-family: inherit;
   /* 1 */
@@ -127,12 +112,10 @@ button, input, select, textarea {
   /* 3 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003130}}
 a:focus {
   outline: thin dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003134}}
 button, html input[type="button"] {
   -webkit-appearance: button;
   /* 2 */
@@ -140,26 +123,22 @@ button, html input[type="button"] {
   /* 3 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003142}}
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
   /* 3 */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003149}}
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_rwd_reset\.scss}line{font-family:\00003155}}
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
 /* Vendor Dependencies */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000317}}
 body {
   color: #333333;
   font-size: 1em;
@@ -169,47 +148,37 @@ body {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000326}}
 .h1, .typography h1, .h2, .typography h2, .h3, .typography h3, .h4, .typography h4, .h5, .typography h5, .h6, .typography h6 {
   font-weight: 300;
   padding: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000332}}
 .typography h1 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000333}}
 .typography h2 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000334}}
 .typography h3 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000335}}
 .typography h4 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000336}}
 .typography h5 {
   margin: 1em 0 .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000337}}
 .typography h6 {
   margin: 1em 0 .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000341}}
 .link {
   color: white;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000345}}
 .link:visited {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/_base\.scss}line{font-family:\0000349}}
 .link:hover, .link:visited:hover {
   color: white;
   text-decoration: none;
@@ -218,12 +187,10 @@ body {
 /*
   no javascript
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\000037}}
 .flex {
   background: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\000038}}
 .no-js .flex {
   background: red;
 }
@@ -231,16 +198,14 @@ body {
 /*
   mobile first
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000314}}
 #wrapper {
-  max-width: 620px;
+  width: 100%;
   margin: 0 auto;
   padding: 30px 0;
   background-color: white;
 }
 
 /* custom grid */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000323}}
 .gs {
   display: inline-block;
   vertical-align: top;
@@ -254,7 +219,6 @@ body {
 /*
   fluid design
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000336}}
 .flex {
   display: inline-block;
   vertical-align: top;
@@ -265,22 +229,18 @@ body {
   border-radius: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000344}}
 .flex-1 {
   width: 23%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000345}}
 .flex-2 {
   width: 48%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000346}}
 .flex-3 {
   width: 73%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000347}}
 .flex-4 {
   width: 98%;
 }
@@ -288,7 +248,6 @@ body {
 /*
   footer
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000353}}
 .footer {
   background: greenyellow;
 }
@@ -296,7 +255,6 @@ body {
 /*
   menu
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000360}}
 .menu li {
   display: inline-table;
 }
@@ -304,12 +262,10 @@ body {
 /*
  nav
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000367}}
 .nav {
   background: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000372}}
 .box {
   padding: 10px;
 }
@@ -317,25 +273,21 @@ body {
 /*
   Responsive breaking points and Mobile First approach
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000380}}
 body {
   background: #e4b477;
 }
 
 @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000385}}
   body {
     background: green;
   }
 }
 @media all and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000391}}
   body {
     background: red;
   }
 }
 @media all and (min-width: 1024px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\0000397}}
   body {
     background: blue;
   }
@@ -344,7 +296,6 @@ body {
 /*
  prevent the Angular html template from being briefly displayed by the browser in its raw (uncompiled)
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Leo\/Documents\/root\/angular-base\/scss\/main\.scss}line{font-family:\00003107}}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }

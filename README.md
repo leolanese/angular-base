@@ -136,27 +136,27 @@ You can also ask Karma to do a single run of the tests and then exit.
 
 
 # Bower.js
-    angular-base#0.1
-    ├── angular#1.2.16
-    ├─┬ angular-mocks#1.2.16 extraneous
+    ├─┬ angular-mocks#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
+    │ └── angular#1.2.16 (latest is 1.3.0-build.2792+sha.0dc35ef)
+    ├─┬ angular-route#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
     │ └── angular#1.2.16
-    ├─┬ angular-route#1.2.16 extraneous
+    ├─┬ angular-scenario#1.2.16 extraneous (1.2.17-build.223+sha.d18d5f5 available, latest is 1.3.0-build.2792+sha.0dc35ef)
     │ └── angular#1.2.16
-    ├─┬ angular-scenario#1.2.16 extraneous
-    │ └── angular#1.2.16
+    ├─┬ bootstrap#3.1.1 extraneous
+    │ └── jquery#1.10.2 (2.1.1 available)
+    ├── bootstrap-sass-official#3.1.1+2 extraneous
     ├── happen#0.1.3 extraneous
     ├── jasmine#1.3.1 extraneous (latest is 2.0.0)
-    ├─┬ jasmine-sinon#0.3.1
+    ├─┬ jasmine-sinon#0.3.1 (0.3.2 available, latest is 0.4.0)
     │ ├── jasmine#1.3.1 (latest is 2.0.0)
     │ └── sinonjs#1.7.3 (latest is 1.9.1)
-    ├── jquery#1.10.2 (latest is 2.1.1-rc2)
-    ├── modernizr#2.6.3 (latest is 2.8.0)
+    ├── jquery#1.10.2 (latest is 2.1.1)
+    ├── modernizr#2.6.3 (latest is 2.8.2)
     ├── namespace#0.5.3 extraneous
     ├── normalize-css#3.0.1 extraneous
-    ├── requirejs#2.1.11 extraneous
+    ├── requirejs#2.1.11 extraneous (2.1.13 available)
     ├── requirejs-text#2.0.12 extraneous
-    ├── selectivizr#1.0.2 extraneous
-    └── sinon#1.9.1 extraneous
+    └── selectivizr#1.0.2 extraneous
 
 # Automatic Test
     ├──Jasmine (Behavior Driven Development testing framework: or http://searls.github.io/jasmine-all/jasmine-all-min.js)

@@ -36,16 +36,19 @@ module.exports = function(grunt) {
         },
 
         // Compiles SASS into CSS.
+        // generates the source-map
         sass: {
 
             dist: {  // Target
                 options: {
                     style: 'expanded',
-                    debugInfo: true,
+                    debugInfo: false,
                     sourcemap: false
                 },
                 files: {
-                    '<%= meta.root  %>/app/css/main.css' : '<%= meta.root  %>/scss/main.scss'
+
+                     '<%= meta.root  %>/app/css/main.css' : '<%= meta.root  %>/scss/main.scss',
+                     '<%= meta.root  %>/app/css/bs.css' : '<%= meta.root  %>/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss'
                 }
             }
         },
@@ -116,40 +119,40 @@ module.exports = function(grunt) {
 
 
 
-connect: {
-    test : {
-        port : 8888
-    }
-},
-jasmine: {
-
-    simple: {
-        src: '<%= meta.jasmine %>/src/**/*.js',
-        options: {
-            specs: '<%= meta.jasmine  %>spec/**/*Spec.js',
-            helpers: '<%= meta.jasmine  %>lib/helpers/*.js'
-        }
-    },
-
-    templateTest: {
-        // project's source files
-        src: '<%= meta.jasmine %>/src/**/*.js',
-            options: {
-            // Jasmine spec files
-            specs: '<%= meta.jasmine  %>spec/*Spec.js',
-                // spec helper files
-                helpers: '<%= jasmine  %>lib/helpers/*.js',
-                host: 'http://192.168.0.5:8888/',
-                template: require('grunt-template-jasmine-requirejs'),
-                templateOptions: {
-                    requireConfigFile: '<%= meta.root %>/app/js/main.js',
-                    requireConfig: {
-                        baseUrl: 'overridden/baseUrl'
-                    }
+        connect: {
+            test : {
+                port : 8888
             }
-        }
-    }
-},
+        },
+        jasmine: {
+
+            simple: {
+                src: '<%= meta.jasmine %>/src/**/*.js',
+                options: {
+                    specs: '<%= meta.jasmine  %>spec/**/*Spec.js',
+                    helpers: '<%= meta.jasmine  %>lib/helpers/*.js'
+                }
+            },
+
+            templateTest: {
+                // project's source files
+                src: '<%= meta.jasmine %>/src/**/*.js',
+                    options: {
+                    // Jasmine spec files
+                    specs: '<%= meta.jasmine  %>spec/*Spec.js',
+                        // spec helper files
+                        helpers: '<%= jasmine  %>lib/helpers/*.js',
+                        host: 'http://192.168.0.5:8888/',
+                        template: require('grunt-template-jasmine-requirejs'),
+                        templateOptions: {
+                            requireConfigFile: '<%= meta.root %>/app/js/main.js',
+                            requireConfig: {
+                                baseUrl: 'overridden/baseUrl'
+                            }
+                    }
+                }
+            }
+        },
 
 
         // The responsive_images task will take your source image and
@@ -280,8 +283,10 @@ jasmine: {
 
         // watching tasks
         watch: {
+
             options: {
-                interrupt: true
+                interrupt: true,
+                livereload: true
             },
 
             // run unit tests with karma (server needs to be already running)
@@ -294,7 +299,9 @@ jasmine: {
             // Watch for sass changes, building CSS directly
             css: {
                 // Which files to watch (all .scss files recursively in the scss directory)
-                files: ['<%= meta.root  %>/scss/*.scss'],
+                files: [
+                        '<%= meta.root  %>/scss/*.scss'
+                       ],
                 tasks: ['sass:dist'],
                 options: {
                     nospawn: true
@@ -304,9 +311,12 @@ jasmine: {
             // Watch for JS changes, linting the JS and copying direct to deployment directory.
             scripts: {
                 files: ['Gruntfile.js', 'server.js', '<%= meta.root  %>/js/lib/*.js', '<%= meta.www  %>/tests/**/*.js'],
-                tasks: ['jshint', 'uglify:dist']
+                tasks: ['jshint', 'uglify:dist'],
+                options: {
+                    //spawn: false,
+                    livereload: true
+                }
             },
-
 
             // Watch for SASS changes, building CSS directly into deployment directory.
             sass: {
@@ -319,6 +329,7 @@ jasmine: {
 
     // // Register tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -332,6 +343,12 @@ jasmine: {
     grunt.loadNpmTasks("grunt-modernizr");
 
 
-    // Task definitions
-    grunt.registerTask('default', 'jasmine', ['watch', 'karma', 'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
+    // Task definitions: put the tasks on a factory
+    grunt.registerTask('default', ['watch',  'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
+
+    grunt.registerTask('test', [
+        'karma',
+        'uglify'
+    ]);
+
 };
