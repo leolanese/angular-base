@@ -17,17 +17,16 @@ define(['angular'], function (angular) {
         .factory('labAPIservice', function($http) {
             "use strict";
 
-            var labAPI = {};
+            var factory = {};
 
-            labAPI.getJSON = function() {
+            factory.getJSON = function() {
                 return $http({
                     method: 'JSONP',
                     url: 'http://api.openweathermap.org/data/2.5/weather?q=london,uk&callback=JSON_CALLBACK'
                 });
             };
 
-            return labAPI;
+            return factory;
         });
-
 
 });

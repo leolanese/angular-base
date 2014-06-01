@@ -16,6 +16,21 @@ module.exports = function(grunt) {
 
         },
 
+
+        express: {
+
+            options: {
+                // Override defaults here
+            },
+            dev: {
+                options: {
+                    script: '<%= meta.root  %>/scripts/server.js'
+                }
+            }
+
+        },
+
+
         // Compiles SASS (with Compass) into CSS.
         compass: {                  // Task
 
@@ -286,7 +301,17 @@ module.exports = function(grunt) {
 
             options: {
                 interrupt: true,
-                livereload: true
+                livereload: false
+            },
+
+            express: {
+                files:  [ '<%= meta.root  %>**/*.js' ],
+                tasks:  [ 'express:dev' ],
+                options: {
+                    spawn: false // for grunt-contrib-watch v0.5.0+,
+                    // "nospawn: true" for lower versions.
+                    // Without this option specified express won't be reloaded
+                }
             },
 
             // run unit tests with karma (server needs to be already running)
@@ -314,7 +339,7 @@ module.exports = function(grunt) {
                 tasks: ['jshint', 'uglify:dist'],
                 options: {
                     //spawn: false,
-                    livereload: true
+                    livereload: false
                 }
             },
 
@@ -341,6 +366,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-ngmin'); // add the [] for production uglify
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks("grunt-modernizr");
+    grunt.loadNpmTasks('grunt-express-server');
 
 
     // Task definitions: put the tasks on a factory
@@ -349,6 +375,11 @@ module.exports = function(grunt) {
     grunt.registerTask('test', [
         'karma',
         'uglify'
+    ]);
+
+    grunt.registerTask('server', [
+        'express:dev',
+        'watch'
     ]);
 
 };

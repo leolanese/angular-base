@@ -6,10 +6,11 @@ define(['angular', 'services'], function (angular) {
 	return angular.module('myTestApp.controllers', ['myTestApp.services'])
 
 
-        .controller('titleCtrl',['$scope', function ($scope) {
+        .controller('titleCtrl',['$scope', 'version' , function ($scope, version) {
 
             $scope.t0 = "Test - Leo Lanese";
             // include BOLD content style?
+            $scope.appSettings = version;
 
         }])
 
@@ -73,18 +74,11 @@ define(['angular', 'services'], function (angular) {
 
 
 
-
-
-
-
         .controller('MyCtrl1', ['$scope', function($scope) {
 
             $scope.t1 = "This is the partial for view 1";
 
-
-
         }])
-
 
 
         .controller('MyCtrl2', ['$scope', function($scope) {
