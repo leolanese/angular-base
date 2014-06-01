@@ -183,6 +183,13 @@ You can also ask Karma to do a single run of the tests and then exit.
 # IDE
     └── WebStorm
 
+# RequireJS conf file:
+    └── main.js
+
+# AngularJS conf file:
+    └── app.js
+
+--------
 
 # Problems on push:
 <pre>
