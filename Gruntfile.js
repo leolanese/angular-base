@@ -16,13 +16,12 @@ module.exports = function(grunt) {
 
         },
 
-
+        /* node webserver using express */
         express: {
-
             options: {
                 // Override defaults here
             },
-            dev: {
+            web: {
                 options: {
                     script: '<%= meta.root  %>/scripts/server.js'
                 }
@@ -296,22 +295,55 @@ module.exports = function(grunt) {
 
         },
 
+
         // watching tasks
         watch: {
 
-            options: {
-                interrupt: true,
-                livereload: false
+            files: [
+                '<%= meta.root  %>/app/js/**/*.js',
+                '<%= meta.root  %>/scss/**/*.scss',
+                '<%= meta.root  %>/app/partials/**/*.scss',
+                '<%= meta.root  %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+            ],
+
+            /* testing livereload */
+            frontend: {
+                options: {
+                    livereload: true
+                },
+                files: [
+                    '<%= meta.root  %>/app/js/**/*.js',
+                    '<%= meta.root  %>/scss/**/*.scss',
+                    '<%= meta.root  %>/app/partials/**/*.scss',
+                    '<%= meta.root  %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                ]
             },
 
-            express: {
-                files:  [ '<%= meta.root  %>**/*.js' ],
-                tasks:  [ 'express:dev' ],
+
+            connect: {
                 options: {
-                    spawn: false // for grunt-contrib-watch v0.5.0+,
-                    // "nospawn: true" for lower versions.
-                    // Without this option specified express won't be reloaded
-                }
+                    spawn: false,
+                    port: 9000,
+                    livereload: 35728,
+                    // change this to '0.0.0.0' to access the server from outside
+                    hostname: "127.0.0.1"
+                },
+                livereload: {
+                    options: {
+                        open: {
+                            target: 'http://localhost:9000/'
+                        },
+                        base: [
+                            '<%= meta.root  %>'
+                        ]
+                    }
+                },
+                files: [
+                    '<%= meta.root  %>/app/js/**/*.js',
+                    '<%= meta.root  %>/scss/**/*.scss',
+                    '<%= meta.root  %>/app/partials/**/*.scss',
+                    '<%= meta.root  %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                ]
             },
 
             // run unit tests with karma (server needs to be already running)
@@ -339,7 +371,7 @@ module.exports = function(grunt) {
                 tasks: ['jshint', 'uglify:dist'],
                 options: {
                     //spawn: false,
-                    livereload: false
+                    livereload: true
                 }
             },
 
@@ -350,11 +382,12 @@ module.exports = function(grunt) {
             }
         }
 
+
+
     });
 
     // // Register tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -366,20 +399,24 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-ngmin'); // add the [] for production uglify
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks("grunt-modernizr");
+
     grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-parallel');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+
+
 
 
     // Task definitions: put the tasks on a factory
-    grunt.registerTask('default', ['watch',  'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
+    grunt.registerTask('default', [
+        'watch',  'jshint', 'compass', 'csslint', 'uglify', 'requirejs' ]);
 
     grunt.registerTask('test', [
-        'karma',
-        'uglify'
+        'karma', 'uglify'
     ]);
 
-    grunt.registerTask('server', [
-        'express:dev',
-        'watch'
+    grunt.registerTask('serve', [
+        'connect', 'watch'
     ]);
 
 };
