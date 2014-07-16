@@ -8,10 +8,8 @@ define(['angular'], function (angular) {
 	angular.module('myTestApp.services', []) // add service to the module
 
         .constant('version', { // not available on the config
-
             title: 'Leo Lanese Test',
             version: '1'
-
         })
 
         .factory('labAPIservice', function($http) {
