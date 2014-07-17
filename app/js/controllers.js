@@ -9,8 +9,24 @@ define(['angular', 'services'], function (angular) {
         .controller('titleCtrl',['$scope', 'version' , function ($scope, version) {
 
             $scope.t0 = "Test - Leo Lanese";
-            // include BOLD content style?
+
+            $scope.classVar = "bold";
+
             $scope.appSettings = version;
+
+        }])
+
+        .controller('styleCtrl',['$scope', 'version' , function ($scope, version) {
+
+            $scope.t100 = "Title: Test Title";
+
+            $scope.classVar = "classvar";
+
+        }])
+
+        .controller('toggleclass',['$scope', 'version' , function ($scope, version) {
+
+            $scope.classVar = "color";
 
         }])
 

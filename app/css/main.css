@@ -184,6 +184,14 @@ body {
   text-decoration: none;
 }
 
+/* ng-cloak */
+/*
+ prevent the Angular html template from being briefly displayed by the browser in its raw (uncompiled)
+*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 /*
   no javascript
 */
@@ -198,6 +206,10 @@ body {
 /*
   mobile first
 */
+body {
+  background: #e4b477;
+}
+
 #wrapper {
   width: 100%;
   margin: 0 auto;
@@ -263,7 +275,7 @@ body {
  nav
 */
 .nav {
-  background: red;
+  background: #b20029;
 }
 
 .box {
@@ -271,12 +283,8 @@ body {
 }
 
 /*
-  Responsive breaking points and Mobile First approach
+  Responsive breaking points & Mobile First approach
 */
-body {
-  background: #e4b477;
-}
-
 @media all and (min-width: 480px) {
   body {
     background: green;
@@ -289,13 +297,19 @@ body {
 }
 @media all and (min-width: 1024px) {
   body {
-    background: blue;
+    background: #005a84;
   }
 }
-/* ng-cloak */
-/*
- prevent the Angular html template from being briefly displayed by the browser in its raw (uncompiled)
-*/
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+/* setting the class using ngClass */
+.title {
+  font-style: italic !important;
+  font-weight: bolder;
+}
+
+.classvar {
+  background: #bbbbbb;
+}
+
+.color {
+  background: indianred;
 }

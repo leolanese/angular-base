@@ -1,18 +1,13 @@
 <!-- grid 25% -->
-<h1>{{ appSettings.title  }}aca</h1>
-
-
-<div ng-repeat="item in items | filter:f" class="cell repeat-animation">
-    {{item}}
-</div>
+<h1 data-ng-controller="styleCtrl" ng-class="['title', classVar]">{{appSettings.title}} {{t100}}</h1>
 
 <div class="container">
     <div class="row">
 
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6" data-ng-controller="toggleclass" ng-class="{color: true}">
             <div class="flex">
-                <div class="box item ng-scope ng-binding rotate-in animation" ng-class="" >
-                    <h2 >{{ startList.name}}</h2>
+                <div class="box">
+                    <h2>{{ startList.name}}</h2>
                     <h4>{{ startList.weather[0].description}}{{ startList.main.temp}}</h4>
                 </div>
             </div>
