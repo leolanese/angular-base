@@ -4,12 +4,13 @@
 <!--[if IE 8]>     <html class="no-js lt-ie9 no-svg" lang="en"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js" lang="en"> <!--<![endif]-->
 
-<!--[if (gte IE 6)&(lte IE 8)]>
+<!--[if (gte IE 6) & (lte IE 8)]>
     <script type="text/javascript" src="bower_components/selectivizr/selectivizr.js"></script>
 <![endif]-->
 
 <!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <![endif]-->
 
 <html data-ng-app="myTestApp">
@@ -19,6 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+    <!-- Mobile optimisation metas -->
     <meta name="author" content="Leo Lanese" />
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -28,9 +30,11 @@
     <title data-ng-controller="titleCtrl">{{t0}}</title>
 
     <link rel="stylesheet" href="./app/css/main.css"/>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./app/css/bs.css">
+    <!-- Latest compiled and minified animations CSS -->
+    <link rel="stylesheet" href="./app/css/animations.css">
+    <link rel="stylesheet" href="./app/css/animate.css">
 
     <!--
     01101100 01100101 01101111 01101100 01100001 01101110 01100101 01110011 01100101 00001010
@@ -39,11 +43,11 @@
 
 	<body data-ng-cloak>
 
-        <nav role=""navigation class="nav">
+        <nav role="navigation" class="nav">
             <ul class="menu">
-                <li><a data-ng-href="#/view1">View (1)</a></li>
-                <li><a data-ng-href="#/view2">View (2)</a></li>
-                <li><a data-ng-href="#/view3">View (3)</a></li>
+                <li><a data-ng-href="#/view1">View: 1</a></li>
+                <li><a data-ng-href="#/view2">View: 2</a></li>
+                <li><a data-ng-href="#/view3">View: 3</a></li>
             </ul>
         </nav>
 
@@ -51,11 +55,13 @@
         <div role="main" id="wrapper">
 
             <div class="typography">
-                <div data-ng-view></div>
+                <main>
+                    <div data-ng-view></div> <!-- legacy <IE8 support -->
+                </main>
 
                 <noscript>
                     <!-- Progressive enhancement: no-js -->
-                    <!-- with no javascript wt
+                    <!-- with no javascript wt -->
 
                     <!-- grid 33% -->
                     <div class="flex flex-2">
