@@ -5,7 +5,7 @@ define(['angular'], function (angular) {
 
   // Demonstrate how to register services
   // In this case it is a simple value service.
-	angular.module('myTestApp.services', []) // add service to the module
+  angular.module('myTestApp.services', []) // add service to the module
 
         .constant('version', { // not available on the config
             title: 'Leo Lanese Test',

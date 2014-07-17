@@ -44,6 +44,7 @@ define(['angular', 'services'], function (angular) {
                 // assigning a unicque value
                 $scope.driver = response.name;
 
+                <!-- debugging -->
                 console.log("$scope.startList", $scope.startList);
                 console.log(response);
                 console.log(response.name);

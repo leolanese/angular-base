@@ -7,6 +7,10 @@
     height: 600px;
 }
 
+.caca {
+    background: blue;
+}
+
 .slide-animation.ng-enter {
     z-index:100;
     left:100px;
