@@ -88,9 +88,12 @@
 
         <p data-ng-bind-html-unsafe=(article.content.IntroText)></p><!-- <br> -->
 
-        <footer role="contentinfo" class="typography footer">
-            <h1>footer</h1>
-        </footer>
+        <!--  using Directives -->
+        <div ng-controller="footerController" ng-class="{color: true}">
+            <!-- depending of "info": Use the scope option to create isolate scopes when making components that you want to reuse throughout your app -->
+            <my-customer info="f1" class="pink"></my-customer>
+            <my-customer info="f2"></my-customer>
+        </div>
 
         <!-- RequireJS to automatically load routes.js (data-main)  -->
         <script data-main="app/js/main" src="./bower_components/requirejs/require.js"></script>

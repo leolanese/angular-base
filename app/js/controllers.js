@@ -121,4 +121,12 @@ define(['angular', 'services'], function (angular) {
 
         }])
 
+
+        .controller('footerController', ['$scope', function($scope) {
+            $scope.f1 = { n1: 'yyyy', a1: 'YYYY' };
+
+            $scope.f2 = { n1: 'xxxx', a1: 'XXXXX' };
+        }])
+
+
 });
