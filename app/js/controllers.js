@@ -2,21 +2,27 @@ define(['angular', 'services'], function (angular) {
 	'use strict';
 
 	/* Controllers */
-	
-	return angular.module('myTestApp.controllers', ['myTestApp.services'])
 
 
-        .controller('titleCtrl',['$scope', 'version' , function ($scope, version) {
+    return angular.module('myTestApp.controllers', ['myTestApp.services'])
+
+        /*
+         The longhand version protects from minification because the angular
+         is now looking at the strings in the array for dependency injection and strings don’t get minified:
+
+         http://jsfiddle.net/leolanese/hykG3/
+         */
+        .controller('titleCtrl',['$scope', 'version' , function ($scope, v) {
 
             $scope.t0 = "Test - Leo Lanese";
 
             $scope.classVar = "bold";
 
-            $scope.appSettings = version;
+            $scope.appSettings = v;
 
         }])
 
-        .controller('styleCtrl',['$scope', 'version' , function ($scope, version) {
+        .controller('styleCtrl',['$scope', function ($scope) {
 
             $scope.t100 = "Title: Test Title";
 
@@ -24,7 +30,7 @@ define(['angular', 'services'], function (angular) {
 
         }])
 
-        .controller('toggleclass',['$scope', 'version' , function ($scope, version) {
+        .controller('toggleclass',['$scope', function ($scope) {
 
             $scope.classVar = "color";
 
@@ -60,7 +66,7 @@ define(['angular', 'services'], function (angular) {
                 // assigning a unicque value
                 $scope.driver = response.name;
 
-                <!-- debugging -->
+                <!-- TODO: remove these, it is just 4 debugging -->
                 console.log("$scope.startList", $scope.startList);
                 console.log(response);
                 console.log(response.name);
@@ -76,7 +82,6 @@ define(['angular', 'services'], function (angular) {
         }])
 
 
-
         .controller('cityController'['$scope', function($scope, $routeParams, labAPIservice) {
             $scope.id = $routeParams.id;
 
@@ -88,8 +93,6 @@ define(['angular', 'services'], function (angular) {
             });
 
         }])
-
-
 
         .controller('MyCtrl1', ['$scope', function($scope) {
 
@@ -107,7 +110,6 @@ define(['angular', 'services'], function (angular) {
         .controller('MyCtrl3', ['$scope', function($scope) {
             $scope.t2 = "This is the partial for view 3";
 
-
         }])
 
 
@@ -117,25 +119,6 @@ define(['angular', 'services'], function (angular) {
             $scope.t0 = "Test - Leo Lanese";
             // include BOLD content style?
 
-
         }])
-
-
-
-
-		.controller('MyCtrl1', ['$scope', 'version', function ($scope, version) {
-			$scope.scopedAppVersion = version;
-		}])
-
-		// More involved example where controller is required from an external file
-		.controller('MyCtrl2', ['$scope', '$injector', function($scope, $injector) {
-			require(['controllers/myctrl2'], function(myctrl2) {
-				// injector method takes an array of modules as the first argument
-				// if you want your controller to be able to use components from
-				// any of your other modules, make sure you include it together with 'ng'
-				// Furthermore we need to pass on the $scope as it's unique to this controller
-				$injector.invoke(myctrl2, this, {'$scope': $scope});
-			});
-		}]);
 
 });
