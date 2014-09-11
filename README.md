@@ -1,7 +1,7 @@
 ## Angular-base (inspired by angular-seed)
 
 # Getting Started
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the angular-base repository and install the dependencies:
 
 # Clone angular-base
 Clone the angular-base repository using:
