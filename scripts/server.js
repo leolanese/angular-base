@@ -1,7 +1,7 @@
 // install the node http-server server
 // npm -g install http-server
 
-// run this server:
+// run this server ON THE PROJECT ROOT
 // http-server
 
 //  get the process that has bound to the required port
